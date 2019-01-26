@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Employee Listings</title>
+
+    <!-- Link to CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="assets/javascript/logic.js"></script>
+</head>
+<body>
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center" id="main-header">Company Employees</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <!-- GIF Card -->
+      <div class="col-lg-12">
+        <div class="card">
+          <h3 class="card-header">Employee Listings</h3><br>
+          <table id="the-table"></table>
+        </div><br>
+        <div class="card">
+          <h3 class="card-header">Add an Employee</h3><br>
+          <form id="the-form">
+            Name:<br>
+            <input type="text" name="name" id="name"/><br>
+            Position:<br>
+            <input type="text" name="pos" id="pos"/><br>
+            Email:<br>
+            <input type="text" name="email" id="email"/><br>
+            Monthly Salary:<br>
+            <input type="text" name="salary" id="salary"/><br><br>
+          </form>
+          <button id="submit-btn" class="btn btn-dark" style="width: 15%"><h3>Submit</h3></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

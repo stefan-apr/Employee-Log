@@ -1,0 +1,15 @@
+.jumbotron {
+    height: 120px;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+}
